@@ -1,0 +1,20 @@
+.squeleton {
+  background-color: #282c34;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    .contHeader, .contFooter {
+      position: relative;
+    }
+    .contBody {
+      flex: 1;
+      overflow: auto;
+    }
+  }
+}
