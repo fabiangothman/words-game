@@ -11,7 +11,7 @@ import Home from '../../Home/Home';
 import Results from '../../Results/Results';
 import ScoreBar from '../../ScoreBar/ScoreBar';
 import Footer from '../Footer/Footer';
-import NavBars from '../NavBar/NavBars';
+import NavBar from '../NavBar/NavBar';
 // Styles
 import styles from './Squeleton.module.scss';
 
@@ -87,7 +87,7 @@ const Squeleton = () => {
             }}
           >
             <div className={styles.contHeader}>
-              <NavBars />
+              <NavBar />
               <ScoreBar />
             </div>
             <div className={styles.contBody}>
