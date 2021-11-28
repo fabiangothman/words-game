@@ -1,0 +1,16 @@
+.header {
+  position: relative;
+
+  .navbar {
+    border-bottom: 1px solid gray;
+
+    .title {
+      font-size: calc(1rem + 2vmin);
+      line-height: calc(1rem + 2vmin);
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 0.1rem 0.5rem;
+      font-weight: bold;
+      border-radius: 2rem;
+    }
+  }
+}

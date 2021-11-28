@@ -1,3 +1,26 @@
 .footer {
-    border:1px solid red;
+  background-color: black;
+  padding: 1rem 0;
+  color: gray;
+
+  .contDevs {
+    text-align: left;
+
+    .title {
+      margin-left: 0 !important;
+    }
+    .text {
+      margin-left: 1rem;
+    }
+  }
+  .contCollege {
+    text-align: right;
+  }
+
+  .text {
+    margin: 0;
+    padding: 0;
+    font-size: calc(0.5rem + 2vmin);
+    line-height: calc(0.5rem + 2vmin);
+  }
 }

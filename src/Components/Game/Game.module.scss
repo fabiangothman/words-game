@@ -1,0 +1,85 @@
+.game {
+  position: relative;
+
+  .container {
+    margin-top: calc(1rem + 2vmin);
+    margin-bottom: calc(1rem + 2vmin);
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2rem;
+    .loading {
+      text-align: center;
+    }
+
+    .content{
+      p {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+
+      .warnings {
+        font-size: calc(0.05rem + 2vmin);
+        line-height: calc(0.05rem + 2vmin);
+        p {
+          margin:0;
+        }
+      }
+
+      .contWord {
+        text-align: center;
+        margin: calc(0.5rem + 0.5vmin) 0 calc(0.5rem + 0.5vmin) 0;
+        .word {
+          background-color: blanchedalmond;
+          color: green;
+          font-weight: bold;
+          padding: calc(0.1rem + 0.1vmin) calc(0.1rem + 0.1vmin);
+          display: inline-block;
+          font-size: calc(1rem + 2vmin);
+          line-height: calc(1rem + 2vmin);
+          margin-bottom: calc(0.3rem + 0.3vmin);
+          &:not(:last-of-type) {
+            margin-right: calc(0.3rem + 0.3vmin);
+          }
+        }
+        .disabled {
+          display: none;
+        }
+      }
+
+      .contInput {
+        width: 100%;
+        margin-bottom: calc(2rem + 2vmin);
+        .input {
+          width: 100%;
+          height: 100%;
+          border: 0;
+          padding: calc(0.5rem + 0.5vmin);
+          text-align: center;
+        }
+
+        .contButtonValidate {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      .contButtonNext {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        a {
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+.start {
+  text-align: center;
+  margin-top: 2rem;;
+}
