@@ -10,7 +10,6 @@ const Results = () => {
   const { gameInProgress, setGameInProgress, progress, setProgress, score, setScore, scoreSystem, gameLevel } = useContext(GeneralGameContext);
 
   const handlePlayAgain = () => {
-    console.log("againa!");
     setProgress(1);
     setScore(0);
     setGameInProgress(false);
@@ -22,7 +21,7 @@ const Results = () => {
         as={Link}
         to="/"
       >
-        <div className={styles.start}>
+        <div data-testid="start-button" className={styles.start}>
           <ColoredText text="Click aqui para empezar un juego." />
         </div>
       </Nav.Link>
