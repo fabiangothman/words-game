@@ -3,7 +3,7 @@ import Squeleton from './Components/Layouts/Squeleton/Squeleton';
 
 function App() {
   return (
-    <div className="App">
+    <div data-testid="squeleton" className="App">
       <Squeleton />
     </div>
   );

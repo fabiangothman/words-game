@@ -92,7 +92,7 @@ const Game = () => {
         as={Link}
         to="/"
       >
-        <div className={styles.start}>
+        <div data-testid="start-button" className={styles.start}>
           <ColoredText text="Click aqui para empezar un juego." />
         </div>
       </Nav.Link>
@@ -105,7 +105,7 @@ const Game = () => {
           <Col>
             <div className={styles.container}>
               {(word.length === 0) ? (
-                <div className={styles.loading}>
+                <div data-testid="loading" className={styles.loading}>
                   <Spinner animation="border" variant="success" />
                 </div>
               ): (
